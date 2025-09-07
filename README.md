@@ -31,30 +31,32 @@ This project demonstrates the power of **LLMs, AI agents, and containerized exec
 ---
 
 ## 📂 Project Structure
+
+```plaintext
 AnalyzerGPT/
-│── agents/                     # AI agent definitions
-│   │── Code_ExecutorAgent.py    # Executes generated Python code
-│   │── Data_AnalyzerAgent.py    # Generates analysis code from queries
+├── agents/                     # AI agent definitions
+│   ├── Code_ExecutorAgent.py    # Executes generated Python code safely
+│   ├── Data_AnalyzerAgent.py    # Generates analysis code from user queries
 │
-│── prompts/                    # Prompt templates for agents
-│   │── DataAnalyzerAgent_prompt.py
-│   │── CodeExecutorAgent_prompt.py
+├── prompts/                    # Prompt templates for agents
+│   ├── DataAnalyzerAgent_prompt.py
+│   ├── CodeExecutorAgent_prompt.py
 │
-│── config/                     # Config files for Docker & model setup
-│   │── constants.py
-│   │── docker_utils.py
-│   │── openai_model_config.py
+├── config/                     # Configuration files
+│   ├── constants.py             # Project constants and paths
+│   ├── docker_utils.py          # Docker helper functions
+│   ├── openai_model_config.py   # OpenAI/LLM model configuration
 │
-│── models/                     # Placeholder for future model storage
+├── models/                     # Placeholder for trained/custom models
 │
-│── team/                       # Agent team orchestration
-│   │── analyzer_gpt.py
+├── team/                       # Agent team orchestration
+│   ├── analyzer_gpt.py
 │
-│── main.py                     # Main entry point
-│── streamlit_app.py             # Streamlit interface for chat-based interaction
-│── requirements.txt             # Python dependencies
-│── .env                         # API keys and environment variables
-│── output1.lua                  # Example output/log file
+├── main.py                     # Main entry point for running the system
+├── streamlit_app.py            # Streamlit interface for chat-based interaction
+├── requirements.txt            # Python dependencies
+├── .env                        # API keys and environment variables
+├── output1.lua                 # Example output/log file
 
 
 ---
