@@ -31,17 +31,14 @@ This project demonstrates the power of **LLMs, AI agents, and containerized exec
 ---
 
 ## 📂 Project Structure
-
+```plaintext
 AnalyzerGPT/
 ├── agents/                     # AI agent definitions
 │   ├── Code_ExecutorAgent.py    # Executes generated Python code safely
-
 │   ├── Data_AnalyzerAgent.py    # Generates analysis code from user queries
 │
 ├── prompts/                    # Prompt templates for agents
-
 │   ├── DataAnalyzerAgent_prompt.py
-
 │   ├── CodeExecutorAgent_prompt.py
 │
 ├── config/                     # Configuration files
@@ -62,6 +59,7 @@ AnalyzerGPT/
 
 ---
 
+```
 ## ⚙️ Setup & Installation
 
 1. **Clone the repository**
