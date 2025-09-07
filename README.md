@@ -32,15 +32,29 @@ This project demonstrates the power of **LLMs, AI agents, and containerized exec
 
 ## 📂 Project Structure
 AnalyzerGPT/
-│── agents/ # AI agent definitions (Analyzer & Executor)
-│── prompts/ # Prompt templates for agents
-│── config/ # Config files for Docker & model setup
-│── models/ # (Optional) custom models
-│── team/ # Agent team definitions
-│── main.py # Entry point for running locally
-│── streamlit_app.py # Streamlit interface for chat interaction
-│── requirements.txt # Python dependencies
-│── .env # API keys & environment variables
+│── agents/                     # AI agent definitions
+│   │── Code_ExecutorAgent.py    # Executes generated Python code
+│   │── Data_AnalyzerAgent.py    # Generates analysis code from queries
+│
+│── prompts/                    # Prompt templates for agents
+│   │── DataAnalyzerAgent_prompt.py
+│   │── CodeExecutorAgent_prompt.py
+│
+│── config/                     # Config files for Docker & model setup
+│   │── constants.py
+│   │── docker_utils.py
+│   │── openai_model_config.py
+│
+│── models/                     # Placeholder for future model storage
+│
+│── team/                       # Agent team orchestration
+│   │── analyzer_gpt.py
+│
+│── main.py                     # Main entry point
+│── streamlit_app.py             # Streamlit interface for chat-based interaction
+│── requirements.txt             # Python dependencies
+│── .env                         # API keys and environment variables
+│── output1.lua                  # Example output/log file
 
 
 ---
